@@ -32,7 +32,7 @@ console.log(containergallery);
 const elements = images
   .map(({ url, alt }) => {
  const itemEl = document.createElement("li");
-    itemEl.classList.add("item")
+    itemEl.classList.add("item-gallery")
     const imageEl = document.createElement("img");
     imageEl.classList.add("picture");
     imageEl.src = `${url}`;

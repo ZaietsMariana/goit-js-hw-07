@@ -27,17 +27,46 @@ li {
   gap: 24px;
   border-radius: 8px;
   background: #FFF;
-  margin: 0 auto;
 }
 
 .item{
   border-radius: 8px;
   background: #F6F6FE;
   padding: 16px;
-
 }
 
+.item h2{
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
 
+.item ul{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: start;
+  padding-left: 0;
+}
+
+.item li{
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
 
 /* =======================TASK 2 ========= */
 
@@ -46,12 +75,10 @@ li {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  padding-left: 0;
-  padding-right: 0;
-  
+  padding: 100px 156px;
 }
 
-.item {
+.item-gallery {
   width: calc((100% - 48px) / 3);
  
 }
@@ -63,10 +90,103 @@ li {
 }
 
 /* ================TASK 3=================== */
+#name-input{
+align-content: start;
+border-radius: 4px;
+border: 1px solid #808080;
+width: 360px;
+height: 40px;
+padding: 8px 16px;
+margin-left: 24px;
+}
+
+#name-input[placeholder]{
+color: #2E2F42;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.04em;
+margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+color: #2E2F42;
+ font-family: Montserrat;
+ font-size: 24px;
+ font-weight: 600;
+ line-height: 1.33;
+ letter-spacing: 0.04em;
+ margin-left: 24px;
+} 
 
 
 /* ================TASK 4=================== */
 
+form{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+form button{
+border-radius: 8px;
+background: #4E75FF;
+padding: 8px 16px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04;
+border-color: transparent;
+height: 40px;
+width: 86px;
+}
+
+label{
+  color: #2E2F42;
+  
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+label input{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+label input:hover{
+  border-color: #000000;
+}
+
+label input:active{
+  border-color: #808080;
+}
 
 /* ================TASK 5=================== */
 .widget {
@@ -105,7 +225,7 @@ p {
   gap: 16px;
 }
 
-input{
+#controls input{
   border-radius: 8px;
   border: 1px solid #808080;
   display: flex;
@@ -144,32 +264,31 @@ button[data-create]{
 
 button[data-destroy]:last-child {
   display: flex;
-    width: 120px;
-    padding: 8px 16px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    background: #4E75FF;
-    border-color: transparent;
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-background: #FF4E4E;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  background: #4E75FF;
+  border-color: transparent;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #FF4E4E;
 }
 
 button[data-destroy]:last-child:hover{
-background: #FF7070;
+ background: #FF7070;
 }
 
 #boxes{
   display: flex;
-  flex-wrap: nowra;
+  flex-wrap: wrap;
   padding: 32px;
   gap: 44px;
-  flex-shrink: 0;
 }
